@@ -7,9 +7,9 @@
 <div class="adapt" id="adapt"  #adapt >
 
         <ul class="navbar">
-            <li><a routerLink="/">Acceuil</a></li>
-            <li><a routerLink="/contact">Contactez-nous</a></li>
-            <li><a routerLink="/about">Qui sommes-nous</a></li>
+            <li><a  routerLinkActive="currentPage" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Acceuil</a></li>
+            <li><a  routerLinkActive="currentPage"routerLink="/contact">Contactez-nous</a></li>
+            <li><a  routerLinkActive="currentPage" routerLink="/about">Qui sommes-nous</a></li>
         </ul>
 
     <div class="store-buttons">

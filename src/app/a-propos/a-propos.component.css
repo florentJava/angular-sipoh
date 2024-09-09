@@ -1,25 +1,22 @@
 
-
-
-
 header{
 
-
+    position: relative;
     box-sizing: border-box;
     width: 100%; 
-    height: 100vh;
+
+    min-height: 100vh;
+
+    
     color: white;
 
-
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #161C2D 99.54%) ,url('../../assets/nousBg.png');
+    background-image: linear-gradient(358.99deg, rgba(0, 0, 0, 6e-05) -4.3%, rgba(22, 28, 45, 0.6) 102.84%) ,  url('../../assets/nousBg.png');
 
     background-blend-mode: multiply;
 
     background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-position: center;
 
-    gap: 10vh;
 
     /* aspect-ratio: 4096/9 */
 
@@ -28,16 +25,20 @@ header{
     justify-content: top;
     align-items: center;
 
-/* 
-    position: relative;
-    
-    
-    background-image: url('/assets/nousBg.png');
-    
-    padding-bottom: 56.25%; /* aspect ratio 16:9, ajustez selon votre image */
-    background-size: contain; 
     
 }
+
+header h1{
+    position: absolute;
+    bottom: 50px;
+
+    font-size: 80px;
+    font-weight: 700;
+
+}
+
+
+
 
 
 
@@ -75,6 +76,98 @@ main article p {
 }
 
 
+
+@media (max-width: 2342px){
+
+    header{
+        min-height: 100vh;
+    }
+
+
+}
+
+
+@media (max-width: 1959px){
+
+    header{
+        min-height: 80vh;
+    }
+}
+
+
+@media (max-width: 1773px){
+    
+        header{
+            min-height: 70vh;
+        }
+}
+
+
+
+@media (max-width: 1528px){
+    
+    header{
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 1198px){
+    
+    header{
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 1052px){
+    
+    header{
+        min-height: 45vh;
+    }
+}
+
+@media (max-width: 970px){
+    
+    header{
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 815px){
+    
+    header{
+        min-height: 30vh;
+    }
+}
+
+@media (max-width: 642px){
+    
+    header{
+        min-height: 25vh;
+    }
+}
+
+@media (max-width: 512px){
+    
+    header{
+        min-height: 20vh;
+        aspect-ratio: 19/9;
+    }
+}
+
+
+@media (max-width: 430px){
+    
+    header{
+        min-height: 15vh;
+    }
+}
+
+
+
+
+
+
+
 /* Taille des  polices d'articles */
 
 @media (max-width: 1004px){
@@ -90,6 +183,9 @@ main article p {
 }
 
 
+
+
+
 /* Taille des  polices d'articles sur mobile */
 
 @media (max-width: 425px){
@@ -103,17 +199,3 @@ main article p {
         line-height: 2;
     }
 }
-
-
-/* Taille de l'image de group */
-/* @media (max-width: 1440px){
-
-    header {
-
-        height: 90vh;
-
-        background-size: contain;
-        aspect-ratio: 1757/676;
-    }
-
-} */

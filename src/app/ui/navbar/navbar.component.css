@@ -23,6 +23,10 @@
                 animation: bounce-in-left 1.1s both;
 }
 
+.currentPage{
+    border-bottom: #0056b3 2px solid;
+}
+
 :host img {
     width: 5vw;
     aspect-ratio: 979/477;
