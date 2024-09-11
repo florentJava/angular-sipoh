@@ -9,6 +9,8 @@ header {
     height: 100vh;
     color: white;
 
+    position: relative;
+
 
 
 
@@ -19,8 +21,6 @@ header {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
-    gap: 10vh;
 
     /* aspect-ratio: 4096/9 */
 
@@ -36,6 +36,10 @@ header {
 
 
 .message{
+
+    position: absolute;
+    bottom: 25vh;
+    transform: translateY(-50%);
 
     box-sizing: border-box;
     width: 100%;
