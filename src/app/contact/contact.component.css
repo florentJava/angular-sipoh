@@ -3,13 +3,13 @@ header{
     box-sizing: border-box;
     width: 100%; 
     height: 100vh;
+
     color: white;
 
 
 
 
     background-image:  url('../../assets/contactBG.png');
-    background-blend-mode: multiply;
 
     background-size: cover;
     background-position: top;
@@ -28,6 +28,8 @@ header{
 
 
 main{
+
+    box-sizing: border-box;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -48,6 +50,8 @@ main img{
 
 
 .news_letter{
+
+     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -72,6 +76,7 @@ main img{
     letter-spacing: -1.2000000476837158px;
     text-align: left;
 
+
 }
 .news_letter form{
     display: flex;
@@ -83,11 +88,16 @@ main img{
 .email-input {
     padding: 10px;
     font-size: 14px;
+    outline: none;
     border: 1px solid #ccc;
     border-radius: 4px;
     flex: 1;
     margin-right: 10px;
-    width: 250px;
+    max-width: 250px;
+}
+
+.email-input:focus{
+        border: #007bff solid 2px;
 }
 
 .subscribe-button {
@@ -128,7 +138,7 @@ main img{
 @media (max-width: 414px){
 
     .email-input {
-        width: 150px;
+        width: 100%px;
     }
 
     main {
@@ -136,6 +146,20 @@ main img{
     }
 
 }
+
+@media (max-width: 390px){
+
+
+
+        .email-input {
+            width: 100%;
+        }
+    
+        main {
+            gap: 5vh;
+        }
+    
+    }
 
 
 
