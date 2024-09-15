@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import * as AOS  from 'aos'; //AOS - 1
 
 import { FooterComponent } from './footer.component';
 

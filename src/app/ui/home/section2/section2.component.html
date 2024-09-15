@@ -1,6 +1,10 @@
-<section class="section3">
+<section class="section3" >
 
-    <div class="header">
+    <div *ngIf="show"
+    data-aos="zoom-in-down"
+    data-aos-anchor-placement="top-center"
+
+    class="header"    >
 
         <h2>
             Fonctionnalités Clés de SIPOH
@@ -15,7 +19,9 @@
     <div class="fonctionnalites">
 
 
-        <article *ngFor="let item of articles">
+        <article *ngFor="let item of articles" data-aos="zoom-in-down" 
+        data-aos-anchor-placement="top-center"
+        >
 
 
             <div class="icon">

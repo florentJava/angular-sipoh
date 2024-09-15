@@ -1,5 +1,7 @@
 
-    <div class="info">
+    <div class="info"  *ngIf="show" data-aos="zoom-in-down"
+    data-aos-anchor-placement="top-center"
+    >
         <h2>C’est quoi SIPOH ?</h2>
 
 
@@ -11,6 +13,7 @@
     </div>
 
 
-    <img src="assets/security.png" alt="">
+    <img *ngIf="show" data-aos="zoom-in-down" 
+    src="assets/security.png" alt="">
 
 

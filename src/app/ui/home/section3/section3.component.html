@@ -1,6 +1,7 @@
 <section class="section4">
 
-    <div class="header">
+    <div class="header"  *ngIf="show" data-aos="zoom-in-down"
+    data-aos-anchor-placement="top-center">
         <h2>
             Comment ça <br> Marche?
         </h2>
@@ -10,15 +11,28 @@
         </p>
     </div>
 
-    <div class="body">
+    <div class="body" >
 
-        <img src="assets/process_image.png" alt="" class="baniere">
-        <img src="assets/process.png" alt="" class="process">
+        <img 
+        *ngIf="show"
+         data-aos="zoom-in-down"
+         data-aos-anchor-placement="top-center"
+         src="assets/process_image.png" alt="" class="baniere">
+
+
+        <img 
+            *ngIf="show"
+            data-aos="zoom-in-down"
+            data-aos-anchor-placement="top-center"
+            src="assets/process.png" alt="" class="process"
+        >
 
     </div>
 
 
-    <div class="news_letter">
+    <div class="news_letter" 
+
+    >
 
         <p>
             Abonnez-vous à notre newsletter <br> pour recevoir nos dernières actualités.

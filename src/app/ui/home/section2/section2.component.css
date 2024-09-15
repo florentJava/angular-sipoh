@@ -16,21 +16,6 @@
 }
 
 
-.section3 .header {
-
-
-    opacity: 0;
-    animation: info ease-in forwards;
-
-    animation-iteration-count: 1; /* L'animation ne s'exécute qu'une fois */
-
-
-    animation-timeline: view();
-    animation-range-start: cover 20%;
-    animation-range-end: cover 30%;
-
-
-}
 
 
 .section3 .header h2 {
@@ -78,16 +63,9 @@
 
 .fonctionnalites article{
 
-    opacity: 0;
-    animation: info ease-in forwards;
-
-    animation-timeline: view();
-    animation-range-start: cover 10%;
-    animation-range-end: cover 20%;
-
-
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: space-around;
     align-items: center;
     max-width: 100%;
@@ -176,25 +154,4 @@
 
     }
 
-}
-
-
-
-
-@keyframes info {
-
-    0%{
-        opacity: .4;
-        transform: translateY(-20%);
-    }
-
-
-
-
-    100%{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-
-    
 }
