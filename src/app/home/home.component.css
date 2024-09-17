@@ -97,9 +97,45 @@ header {
 
 
 
+@media (max-width: 600px){
 
 
-@media (max-width: 425px){
+    .message h1{
+        font-size: 33px;
+    }
+    
+    .message p{
+    
+        font-size: 20px;
+    
+    }
+    
+    .cta-button {
+        display: inline-flex;
+    
+        padding: 7px 12px;
+        font-size:   15px;
+    }
+    
+    .cta-button .icon-container i {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    
+    .cta-button:hover {
+        background-color: #0056b3;
+    }
+    
+    
+
+
+
+}
+
+
+
+@media (max-width: 380px){
 
 
 
@@ -132,7 +168,7 @@ header {
     
     
     
-    }
+}
 
 
 /* ------------------------------- section 2 ---------------------------------------------------------------------------------------------- */
