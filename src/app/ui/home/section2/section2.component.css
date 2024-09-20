@@ -147,11 +147,20 @@
 }
 
 
-@media (max-width: 412px){
+@media (max-width: 450px){
+
+
+    .fonctionnalites{
+        width: 80%;
+    }
+
+    .fonctionnalites article p{
+        text-align: center;
+        max-width: 100%;
+    }
 
     .section3 .end{
         height: 20px;
-
     }
 
 }

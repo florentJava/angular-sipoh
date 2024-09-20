@@ -23,7 +23,7 @@
 
 
 :host img {
-    width: 5vw;
+    width: 3vw;
     aspect-ratio: 979/477;
 
 }
@@ -70,18 +70,38 @@
 
 
 :host .navbar   li  a {
+
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    position: relative;
+
+
     text-decoration: none;
     color: white;
-    font-size: clamp(18px, 1vw, 30px);
     
     font-weight: semi-bold;
     letter-spacing: 1.5px;
     padding: 10px 15px;
+
+    transition: opacity 2s;
 }
 
-.currentPage{
-    text-decoration: underline;
-    border-bottom: solid 3px #E6007E;
+:host .navbar   li  a:hover{
+
+    opacity: 0.5;
+
+}
+
+.currentPage::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%; /* Longueur de la bordure */
+    border-bottom: 2px solid #E6007E; /* Couleur et épaisseur de la bordure */
 }
 
 
@@ -111,7 +131,7 @@
 }
 .store-button img {
 
-    width: 160px;
+    width: 135px;
 
     aspect-ratio: 135/40; 
     display: block;
@@ -195,22 +215,32 @@
     :host .navbar{
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        align-items: flex-start;
+        align-content: center;
+        align-items: center;
 
         justify-content: center;
         width: 100%;
         padding: 0;
-        gap : 20px;
+        gap : 30px;
+    }
+
+    :host .navbar   li{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 0.1px solid #cac4d06c;
+
     }
 
     :host .navbar   li  a {
-        font-size: 17px;
+        font-size: 15px;
         color: black;
     }
 
     .store-buttons{
-        border-top: 0.1px solid #cac4d06c; /* Taille et couleur du trait */
+
+        display: none;
+        /* border-top: 0.1px solid #cac4d06c; 
 
         display: flex;
         flex-direction: column;
@@ -218,30 +248,11 @@
         align-items: flex-start;
         padding: 20px 0px;
 
-        width: 100%;
+        width: 100%; */
     }
 
     .store-button{
         padding: 5px 0px;
-    }
-    .market_place{
-        font-weight: normal;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: left;
-        justify-content: left;
-        text-align: left;
-        color: black;
-
-        text-decoration: none;
-
-        padding: 0px 15px;
-
-
-        font-size: 15px;
-        gap: 0;
-
     }
 
     .store-button img {

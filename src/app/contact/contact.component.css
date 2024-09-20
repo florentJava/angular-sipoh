@@ -22,7 +22,7 @@ header{
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    gap: 5vh;
+    gap: 15vh;
 
     padding-bottom: 50px;
 
@@ -52,13 +52,34 @@ main img{
 
 .contact-container {
     box-sizing: border-box;
-    background-color: #ffffff96;
+    background-color: #ffffff85;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    filter: blur(.8);
 }
+
+.success{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: green;
+
+
+    transition:  display 5s;
+    
+}
+
+.hide{
+    display: none;
+}
+
+
 
 .contact-container h1 {
     margin-top: 0;
@@ -80,7 +101,7 @@ main img{
 .form-group input, .form-group textarea {
     box-sizing: border-box;
 
-    background-color: #ffffff69;
+    background-color: #ffffff98;
 
     width: 100%;
     padding: 10px;
@@ -116,4 +137,15 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    header {
+
+        gap: 5vh;
+
+    }
+
+
 }
