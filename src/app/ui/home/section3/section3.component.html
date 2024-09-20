@@ -13,11 +13,16 @@
             </p>
         </article>
 
+        <div>
 
-        <img src="assets/mini_kit.png" 
-            srcset="assets/mini_kit_mobile.png 390w" 
-     sizes="(max-width: 400px) 390px" 
-     alt="Description de l'image">
+                <img src="assets/mini_kit.png" 
+                    srcset="assets/mini_kit_mobile.png 390w" 
+            sizes="(max-width: 400px) 390px" 
+            alt="Description de l'image">
+
+            
+        </div>
+
 
     </div>
 
@@ -30,12 +35,51 @@
          src="assets/scenario.png" alt="" class="baniere">
 
 
-        <img 
-            *ngIf="show"
-            data-aos="zoom-in-down"
-            data-aos-anchor-placement="top-center"
-            src="assets/process.png" alt="" class="process"
-        >
+         <div class="features">
+
+            <div class="feature">
+              <div class="icon">1</div>
+              <div class="text">
+                <strong>Connexion du dispositif</strong><br>
+                
+                <p>
+                  Le dispositif se connecte facilement à votre téléphone via l'application SIPOH, permettant un suivi et une communication en temps réel.
+    
+                </p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <div class="icon">2</div>
+              <div class="text">
+                <strong>Détection des zones à risque</strong><br>
+                <p>
+                  Dès que vous entrez dans une zone identifiée comme dangereuse, l'application et le dispositif vous envoient une notification pour vous avertir.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">3</div>
+              <div class="text">
+                <strong>Activation manuelle ou par IA</strong><br>
+    
+                <p>
+                  en cas de danger, le dispositif s'active automatiquement ou sur simple pression.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">4</div>
+              <div class="text">
+                <strong>Envoi des alertes</strong><br>
+    
+                <p>
+                  aux contacts d'urgence, aux forces de l'ordre et aux bénévoles à proximité du lieu d'agressions.
+                </p>
+              </div>
+            </div>
+      </div>
+          
 
     </div>
 
