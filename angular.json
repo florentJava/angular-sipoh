@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/sipoh-angular",
+            "outputPath": "dist/sipoh",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,6 +25,12 @@
                 "glob": "**/*",
                 
                 "input": "public"
+              },
+
+              {
+                "glob": "**/*",
+                
+                "input": "src/seo"
               },
 
               {

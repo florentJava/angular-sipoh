@@ -22,7 +22,7 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 
-    gap : 3.5vh;
+    gap : 30px;
     
 }
 
@@ -48,7 +48,7 @@
 
 
 .section4 .header h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
     line-height: 1.2;
@@ -59,6 +59,7 @@
     font-size: 18px;
     font-weight: 400;
     text-align: left;
+    opacity: .6;
     line-height: 2;
 
 }
@@ -168,44 +169,6 @@
     opacity: .3;
 
 }
-.news_letter form{
-    display: flex;
-}
-
-
-
-
-.email-input {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex: 1;
-    margin-right: 10px;
-    width: 12vw;
-}
-
-.subscribe-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.subscribe-button:hover {
-    background-color: #0056b3;
-}
-
-.subscribe-button i {
-    margin-left: 8px;
-}
-
-
 
 
 .input-wrapper {
@@ -233,7 +196,7 @@ input[type="email"]::placeholder {
 }
 
 button[type="submit"] {
-    background-color: #0056b3;
+    background-color: #1D71B8;
     color: white;
     padding: 15px 30px;
     border: none;
