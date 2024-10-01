@@ -1,7 +1,7 @@
 
 :host{
 
-    min-height: 45vh;
+    min-height: 55vh;
 
 
     box-sizing: border-box;
@@ -25,18 +25,20 @@
     line-height: 50px;
 }
 
+
+
 :host h2{
-    font-size: 36px;
+    font-size: 2.2vw;
     font-weight: 600;
     line-height: 48px;
-    letter-spacing: -1.2000000476837158px;
+    letter-spacing: .5px;
     text-align: center;
 
 }
 
 :host p{
 
-    width: 700px ;
+    width: 600px ;
     opacity: 0.8;
     
 
@@ -46,14 +48,22 @@
     padding-left: 50px;
 
     
-    font-size: 19px;
+    font-size: 1vw;
     font-weight: 400;
-    line-height: 35px;
-    letter-spacing: -0.20000000298023224px;
     text-align: justify;
+
+    line-height: 2;
+    letter-spacing: 0.5px;
+
 
     
     /* font-size:    clamp(10px, 4vh, 26px); */
+}
+
+:host img{
+
+    /* transform: translateY(-250px); */
+    height: 480px;
 }
 
 
@@ -115,9 +125,21 @@
 }
 
 
-@media(max-width: 400px){
+@media(max-width: 500px){
 
     img{
         height: 350px;
+    }
+
+    :host p{
+    
+  
+        font-size: 15px;
+        
+        /* font-size:    clamp(10px, 4vh, 26px); */
+    }
+
+    :host h2{
+        font-size: 20px;
     }
 }

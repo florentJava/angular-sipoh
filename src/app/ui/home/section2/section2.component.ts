@@ -15,9 +15,9 @@ export class Section2Component implements OnInit {
 
 
   articles: any = [
-    {icon:"assets/Icon.png" , title:"Alerte instantannée" , content:" Envoi de messages de détresse contenant votre position en temps réel à vos contacts d'urgence, police." },
-    {icon:"assets/icon2.png" , title:'Enregistrement audio en <br> temps réel' , content:"Capturez l'audio en direct pour fournir des preuves en cas de poursuite judiciaire." },
-    {icon:"assets/icon3.png" , title:"Système de Traçage en <br> Temps Réel" , content:"Suivez en temps réel les déplacements de vos enfants quand ils ne sont pas avec vous."},
+    {icon:"assets/Icon.png" , title:"Alerte instantannée " , content:" Envoi de messages de détresse contenant votre position en temps réel à vos contacts d'urgence, police." },
+    {icon:"assets/icon2.png" , title:'Enregistrement audio en  temps réel' , content:"Capturez l'audio en direct pour fournir des preuves en cas de poursuite judiciaire." },
+    {icon:"assets/icon3.png" , title:"Système de Traçage en  Temps Réel" , content:"Suivez en temps réel les déplacements de vos enfants quand ils ne sont pas avec vous."},
     {icon:"assets/Icon4.png" , title:"Plateforme de soutien" , content:"assistance juridique et psychologique, groupe de discussion et chatbot"}    
   ]
 
